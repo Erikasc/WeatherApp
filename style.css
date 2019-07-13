@@ -1,0 +1,245 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+
+    background-image: url(http://bit.ly/2gPLxZ4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: green;
+    margin: 0;
+}
+
+.main {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: 0;*/
+    /*width: 500px;*/
+    height: 150px;
+    padding: 0 200px;
+    font-family: 'Barriecito', cursive;
+
+
+}
+
+.seainput {
+    flex: 1;
+    -moz-border-radius-bottomright: 5px;
+}
+
+.seainput[type="text"] {
+    font-family: monospace;
+    font-size: 20px;
+    color: peru;
+    padding-left: 30px;
+    margin: 5px 0px;
+
+}
+
+.seainput::placeholder {
+    color: black;
+    font-size: 13px;
+    /*padding-left: 20px;*/
+    margin: 5px 0px;
+
+}
+
+.seabutton {
+    flex: 0 15%;
+    width: 15%;
+}
+
+#search {
+    font-size: 18px;
+}
+
+#search label {
+    font-weight: bold;
+}
+
+#search input {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+#search button {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius-bottomright: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+#search button:hover {
+    background-color: deepskyblue;
+}
+
+
+#weather {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 15px 15px;
+    display: none;
+    justify-content: space-between;
+    /*align-items: flex-end;*/
+
+}
+
+
+.block:before {
+    /*width: 300px;*/
+    /*height: 400px;*/
+    background: inherit;
+    /*position: absolute;*/
+    left: -25px;
+/ / giving minus - 25 px left position right: 0;
+    top: -25px;
+/ / giving minus - 25 px top position bottom: 0;
+    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.3);
+    filter: blur(10px);
+}
+
+.lds-facebook {
+    /*display: inline-block;*/
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 64px;
+    height: 64px;
+    text-align: center;
+}
+
+.lds-facebook div {
+    display: inline-block;
+    /*left: 6px;*/
+    width: 13px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+    left: 6px;
+    animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+    left: 26px;
+    animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+    left: 45px;
+    animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+    0% {
+        top: 6px;
+        height: 51px;
+    }
+    50%, 100% {
+        top: 19px;
+        height: 26px;
+    }
+}
+
+.leftSide {
+    display: flex;
+    flex: 0 30%;
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-between;;
+    text-align: left;
+}
+
+.middle {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.middle .icon img {
+    width: 200px;
+}
+
+.rightSide {
+    display: flex;
+    flex: 0 30%;
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+
+}
+
+.rightSide .temperature {
+    display: flex;
+}
+
+.rightSide #weatherTemperature {
+    font-size: 400%;
+
+}
+
+.choose {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.choose button {
+    background-color: #e7e7e7;
+    /*color: black; !* Gray *!*/
+    /*background-color: #555555; !* Black *!*/
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.choose button:nth-of-type(2) {
+    /*background-color: #e7e7e7;*/
+    /*color: black; !* Gray *!*/
+    background-color: #555555; /* Black */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h2 {
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%) translateY(-50%);*/
+    text-align: center;
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: 'Bahianita', cursive;
+    letter-spacing: 7px;
+}

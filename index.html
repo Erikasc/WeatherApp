@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherAPP ---{neTix}</title>
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.31/system.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet'/>
+    <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bahianita&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h2>Times now <span id="time"></span></h2>
+<!--    <h1>Weather APP</h1>-->
+</header>
+<div class="main">
+    <div class="search" id="search">
+        <input placeholder="Place here city... ;)" for="city" class="seainput" type="text" id="city">
+        <button type="button" class="seabutton">Search</button>
+    </div>
+    <div id="load" class="lds-facebook">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div>
+        <br>
+
+    </div>
+    <script>
+        System.import('app.js');
+    </script>
+
+    <div class="block" id="weather">
+        <div class="leftSide">
+            <div style="display: inline-block">
+                <div id="country"></div>
+                <div class="cityName" id="weatherCity">City Name</div>
+            </div>
+            <div>Day today <br> wind speed <br> procent</div>
+
+        </div>
+        <div class="middle">
+            <div id="icon"></div>
+
+            <div id="weatherDescription">Weather Description</div>
+        </div>
+        <div class="rightSide">
+            <div class="temperature">
+                <div id="weatherTemperatureMin" style="padding-right: 50px;">MIN</div>
+                <div id="weatherTemperatureMax">MAX</div>
+            </div>
+            <div id="weatherTemperature">Temperature</div>
+
+        </div>
+
+    </div>
+
+    <div class="choose">
+        <button>One</button>
+        <button>Two</button>
+    </div>
+</body>
+</html>
